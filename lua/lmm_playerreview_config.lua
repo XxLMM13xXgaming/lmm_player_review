@@ -1,6 +1,6 @@
 LMMPRConfig = {}
 LMMPRConfig.QuestionTable = {}
-LMMPRConfig.DevMode = true
+LMMPRConfig.DevMode = false
 /*
 	Made By: XxLMM13xXgaming
 */
@@ -9,7 +9,7 @@ LMMPRConfig.DevMode = true
 -- examples below
 
 -- TIPS:
--- using !n will replease it with the players name!
+-- using !n will replease it with the players name! (player they are reviewing)
 -- putting 0 in the 2nd var will make a text entry box!
 LMMPRConfig.QuestionTable.Q1 = {"Is !n your friend?", 2, "Yes", "No"}
 LMMPRConfig.QuestionTable.Q2 = {"Have you had any problems with this player before?", 2, "Yes", "No"}
@@ -18,19 +18,7 @@ LMMPRConfig.QuestionTable.Q4 = {"What makes this player trustworthy?", 0}
 LMMPRConfig.QuestionTable.Q5 = {"Have you ever seen this player in trouble?", 2, "Yes", "No"}
 LMMPRConfig.QuestionTable.Q6 = {"If you saw anything bad happen to this player what was it?", 0}
 LMMPRConfig.QuestionTable.Q7 = {"Would you like to see !n as a admin?", 2, "Yes", "No"}
-LMMPRConfig.QuestionTable.Q8 = {"Would you like to see !n as a admin?", 2, "Yes", "No"}
-LMMPRConfig.QuestionTable.Q9 = {"Would you like to see !n as a admin?", 2, "Yes", "No"}
-LMMPRConfig.QuestionTable.Q10 = {"Would you like to see !n as a admin?", 2, "Yes", "No"}
-LMMPRConfig.QuestionTable.Q11 = {"Would you like to see !n as a admin?", 2, "Yes", "No"}
-LMMPRConfig.QuestionTable.Q12 = {"Would you like to see !n as a admin?", 2, "Yes", "No"}
-LMMPRConfig.QuestionTable.Q13 = {"Would you like to see !n as a admin?", 2, "Yes", "No"}
-LMMPRConfig.QuestionTable.Q14 = {"Would you like to see !n as a admin?", 2, "Yes", "No"}
-LMMPRConfig.QuestionTable.Q15 = {"Would you like to see !n as a admin?", 2, "Yes", "No"}
-LMMPRConfig.QuestionTable.Q16 = {"Would you like to see !n as a admin?", 2, "Yes", "No"}
-LMMPRConfig.QuestionTable.Q17 = {"Would you like to see !n as a admin?", 2, "Yes", "No"}
-LMMPRConfig.QuestionTable.Q18 = {"Would you like to see !n as a admin?", 2, "Yes", "No"}
-LMMPRConfig.QuestionTable.Q19 = {"Would you like to see !n as a admin?", 2, "Yes", "No"}
 
-LMMPRConfig.HowManyQuestions = 19 -- How many entrys are there ^
+LMMPRConfig.HowManyQuestions = 7 -- How many entrys are there ^ THIS MUST BE CORRECT
 
 LMMPRConfig.AdminGroups = {"superadmin", "admin", "owner"}

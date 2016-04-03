@@ -2,13 +2,13 @@ util.AddNetworkString("LMMPRReviewMe")
 util.AddNetworkString("LMMPRFinishedReview")
 util.AddNetworkString("LMMPRReviewMeAnswersAdmin")
 
-AddCSLuaFile("lmm_playerreview_config.lua")
-include("lmm_playerreview_config.lua")
-
 net.Receive("LMMPRFinishedReview", function(len, ply)
 	local thetable = net.ReadTable()
 	local thenumber = LMMPRConfig.HowManyQuestions
-		
+	local reviwedply = thetable[thenumber + 1][1]
+	
+	reviwedply:ChatPrint(ply:Nick().." has sent in their review on you!")
+	
 	for k, v in pairs(player.GetAll()) do
 		if table.HasValue(LMMPRConfig.AdminGroups, v:GetUserGroup()) then
 			net.Start("LMMPRReviewMeAnswersAdmin")		

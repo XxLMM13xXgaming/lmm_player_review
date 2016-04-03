@@ -7,7 +7,7 @@ local msg_outdated = "You are using a outdated/un-supported version. You are on 
 local ranksthatgetnotify = { "superadmin", "owner", "admin" } -- DO NOT EDIT THIS!
 local addon_id = "LMMPR" -- DO NOT EDIT THIS
 local addon_name = "Player Review" -- DO NOT EDIT THIS
- 
+    
 if (SERVER) then
 
 	util.AddNetworkString(addon_id.."VersionCheckCL")

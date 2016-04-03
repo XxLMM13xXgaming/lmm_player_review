@@ -1,4 +1,3 @@
-include("lmm_playerreview_config.lua")
 surface.CreateFont( "LMMRPfontclose", {
 		font = "Lato Light",
 		size = 25,
@@ -161,6 +160,7 @@ net.Receive("LMMPRReviewMe", function()
 		ybutton.DoClick = function()
 			panel:Close()
 			ClickedYes(ply)
+			Derma_Message( "Please answer correctly!", "NOTICE!", "OK" )
 		end	
 
 		local nbutton = vgui.Create( "DButton", panel )
@@ -250,7 +250,7 @@ net.Receive("LMMPRReviewMe", function()
 				local question = string.gsub( v[1], "!n", ply:Nick() )
 				
 				local WarningLabel = vgui.Create("DLabel", QuestionList)
-				WarningLabel:SetText("Press enter after completing")
+				WarningLabel:SetText("^^^ Press enter after completing ^^^")
 				WarningLabel:SetTextColor(Color(255,0,0))
 				WarningLabel:SetPos(2, startpos + 20)
 				WarningLabel:SetSize(QuestionList:GetWide() - 4, 20)				
