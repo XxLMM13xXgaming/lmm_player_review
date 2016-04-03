@@ -2,12 +2,12 @@
 local version = "1.0" -- DO NOT EDIT THIS!
 local version_url = "https://gist.githubusercontent.com/XxLMM13xXgaming/de347cb1eba613218793fc196979427e/raw/Player%2520Review" -- DO NOT EDIT THIS!
 local update_url = "https://github.com/XxLMM13xXgaming/lmm_player_review" -- DO NOT EDIT THIS!
-local update_ru = "https://gist.githubusercontent.com/XxLMM13xXgaming/d43f0b696b9462c4fccf25d5f9030926/raw/Player%2520Review%2520UR" -- DO NOT EDIT THIS!
+local update_ur = "https://gist.githubusercontent.com/XxLMM13xXgaming/d43f0b696b9462c4fccf25d5f9030926/raw/Player%2520Review%2520UR" -- DO NOT EDIT THIS!
 local msg_outdated = "You are using a outdated/un-supported version. You are on version "..version.."! Please download the new version here: " .. update_url -- DO NOT EDIT THIS!
 local ranksthatgetnotify = { "superadmin", "owner", "admin" } -- DO NOT EDIT THIS!
 local addon_id = "LMMPR" -- DO NOT EDIT THIS
 local addon_name = "Player Review" -- DO NOT EDIT THIS
-
+ 
 if (SERVER) then
 
 	util.AddNetworkString(addon_id.."VersionCheckCL")
@@ -42,7 +42,7 @@ if (SERVER) then
 					net.Send(v)
 				end )
 				
-				http.Fetch(update_ru, function(body, len, headers, code, ply)
+				http.Fetch(update_ur, function(body, len, headers, code, ply)
 					net.Start(addon_id.."VersionCheckCLUR")
 						net.WriteString(body)
 					net.Send(v)	
@@ -71,7 +71,7 @@ if (SERVER) then
 						net.WriteString(string.Trim(body))
 					net.Send(theply)
 				end )
-				http.Fetch(update_ru, function(body, len, headers, code, ply)
+				http.Fetch(update_ur, function(body, len, headers, code, ply)
 					net.Start(addon_id.."VersionCheckCLUR")
 						net.WriteString(body)
 					net.Send(theply)		 
